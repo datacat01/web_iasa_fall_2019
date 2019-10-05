@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        <style>
+            img.chart {
+                height: 50%;
+                width: 50%;
+            }
+        </style>
+        <link rel="stylesheet" ref="css/style.css">
+    </head>
+
+    <body>
+        <header class="site-header">
+            <nav class="main-menu">
+                <ul>
+                    <li class="user-dropdown">
+                        <img class="usr-img" src="images/usr_img.png" alt="profile image" WIDTH=30 HEIGHT=30>
+                        <div class="dropdown-header text-center">
+                            <!-- <p class="font reg">Sara Jonsen</p>
+                            <p class="font light"><i>sara.jonsen@gmail.com</i></p>
+                            <a class="dropdown-item" href="pages/usr_profile.html">Profile</a><br> -->
+                            <div class="login-container">
+                                    <form action="/action_page.php">
+                                      <input type="text" placeholder="Username" name="username">
+                                      <input type="text" placeholder="Password" name="psw">
+                                      <button type="submit">Login</button>
+                                    </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="pages/sign_up.html" target="blank">Register</a></li>
+                    <li><a href="pages/about.html" target="blank">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside class="side-menu">
+                <a href="#"><img class="logo" src="images/logo.png" alt="logo" WIDTH=60 HEIGHT=60></a>
+                <ul>
+                    <li><a href="pages/reservations.html">Reservations</a></li>
+                    <li><a href="pages/employees.html">Employees</a></li>
+                    <li><a href="pages/distributors.html">Distributors</a></li>
+                </ul>
+            </aside>
+            <section class="Dashboard">
+                <h3 class="page-title">Dashboard</h3>
+                <h6 class="smallest font"><i>Login to view your stats and data here</i></h6><hr>
+                <h5 class="reg-font"><i>Statistics up to <time datetime="2019-09-24 16:39">Sep 24, 2019</time></i></p>
+                <table class="charts">
+                        <tr>
+                            <td colspan = 16><h4 class="card-title">Sales Statistics Overview</h4></td>
+                        </tr>
+                        <tr>
+                            <td colspan = 16><img class="chart" src="images/charts/sales_statistics_overview.png" alt="sales stats"></img></td>
+                        </tr>
+                        <tr>
+                            <td colspan = 4><h4 class="card-title">Net Profit Margin</h4></td>
+                        </tr>
+                        <tr>
+                            <td colspan = 4>*Some kind of chart will be here later*</img></td>
+                        </tr>
+                        <tr>
+                            <td colspan = 4><h4 class="card-title">Total Revenue</h4></td>
+                        </tr>
+                        <tr>
+                            <td colspan = 4>*Some kind of chart will be here later*</img></td>
+                        </tr>
+                        <tr>
+                            <td colspan = 4><h4 class="card-title">Transaction</h4></td>
+                        </tr>
+                        <tr>
+                            <td colspan = 4>*Some kind of chart will be here later*</img></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>Copyright © 2019 <a href="https://github.com/olgapashneva" target="blank">Me</a>. 
+            All rights reserved.</span>
+        </footer>
+    </body>
+</html>
