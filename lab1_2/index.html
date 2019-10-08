@@ -9,7 +9,7 @@
                 width: 50%;
             }
         </style>
-        <link rel="stylesheet" ref="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -22,7 +22,7 @@
                             <!-- <p class="font reg">Sara Jonsen</p>
                             <p class="font light"><i>sara.jonsen@gmail.com</i></p>
                             <a class="dropdown-item" href="pages/usr_profile.html">Profile</a><br> -->
-                            <div class="login-container">
+                            <div class="login-form">
                                     <form action="/action_page.php">
                                       <input type="text" placeholder="Username" name="username">
                                       <input type="text" placeholder="Password" name="psw">
@@ -49,34 +49,56 @@
             <section class="Dashboard">
                 <h3 class="page-title">Dashboard</h3>
                 <h6 class="smallest font"><i>Login to view your stats and data here</i></h6><hr>
-                <h5 class="reg-font"><i>Statistics up to <time datetime="2019-09-24 16:39">Sep 24, 2019</time></i></p>
+                <h5 class="reg-font"><i>Statistics up to <time datetime="2019-09-24 16:39">Sep 24, 2019</time></i></h5>
                 <table class="charts">
                         <tr>
-                            <td colspan = 16><h4 class="card-title">Sales Statistics Overview</h4></td>
+                            <td><h3 class="card-title">Sales Statistics Overview</h3></td>
                         </tr>
                         <tr>
-                            <td colspan = 16><img class="chart" src="images/charts/sales_statistics_overview.png" alt="sales stats"></img></td>
+                            <td>
+                                <figure>
+                                    <img class="chart" src="images/charts/sales_statistics_overview.png" alt="sales stats">
+                                    <figcaption>There is a seasonal growth is sales, though total revenue is decresed
+                                        by 15% per one item.
+                                    </figcaption>
+                                </figure>
+                            </td>
                         </tr>
                         <tr>
-                            <td colspan = 4><h4 class="card-title">Net Profit Margin</h4></td>
+                            <td><h3 class="card-title">Net Profit Margin</h3></td>
                         </tr>
                         <tr>
-                            <td colspan = 4>*Some kind of chart will be here later*</img></td>
+                            <td>
+                                <figure>
+                                    <img class="chart" src="images/charts/sales_statistics_overview.png" alt="sales stats">
+                                    <figcaption>*Some kind of text will be here later*</figcaption>
+                                </figure>
+                            </td>
                         </tr>
                         <tr>
-                            <td colspan = 4><h4 class="card-title">Total Revenue</h4></td>
+                            <td><h3 class="card-title">Total Revenue</h3></td>
                         </tr>
                         <tr>
-                            <td colspan = 4>*Some kind of chart will be here later*</img></td>
+                            <td>*Some kind of chart will be here later*</td>
                         </tr>
                         <tr>
-                            <td colspan = 4><h4 class="card-title">Transaction</h4></td>
+                            <td><h3 class="card-title">Transaction</h3></td>
                         </tr>
                         <tr>
-                            <td colspan = 4>*Some kind of chart will be here later*</img></td>
+                            <td>*Some kind of chart will be here later*</td>
                         </tr>
                     </table>
-                </div>
+            </section>
+            <section class="Questions">
+                <h3 class="page-title">Do you have a question about our service?</h3>
+                <h6 class="smallest-font">Leave your question in a form below<wbr>
+                                           and we will contact you asap</h6>
+                <form class="question">
+                    <label><b>Email</b></label>
+                    <input type="text" placeholder="Enter your question" name="question" required><br>
+                    <input type="text" placeholder="Enter your email" name="email" required>
+                    <button type="submit" class="send-question">Send</button>
+                </form><br>
             </section>
         </main>
 
